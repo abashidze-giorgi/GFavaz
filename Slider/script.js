@@ -1,34 +1,3 @@
-// $(document).ready(
-//     function()
-//     {
-//         const items = [
-//             {id: 1, name:"BMW"},
-//             {id: 2, name: "MERCEDES"},
-//             {id: 3, name: "TOYOTA"},
-//             {id: 4, name: "SUZUKI"},
-//             {id: 5, name: "JEEP"}
-//         ];
-
-//         items.forEach(item =>{
-//             const itemCard = `
-//             <div class = "itemClass">
-//                 <h1>${item.name} </h1>
-//             </div>
-//             `;
-//             $(`.carousel`).append(itemCard);
-//         });
-//         $(`.carousel`).slick({
-//             infinite: true,
-//             slidesToShow: 3,
-//             slidesToScroll: 1,
-//             dots: true,
-//             arrows: true,
-//             autoplay: true,
-//             autoplaySpeed: 3000,
-//         });
-
-//     });
-
     $(document).ready(function(){
 
         const character = [

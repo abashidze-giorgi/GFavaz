@@ -1,0 +1,28 @@
+.carousel{
+    width: 100%;
+    margin: 15px auto;
+}
+html{
+    background: linear-gradient(to left, black, red);
+}
+.slick-slide{
+    margin: 10px 10px;
+}
+
+.slick-next:before, .slick-prev:before{
+
+}
+
+.heroeClass{
+    /* display: flex;
+    flex-direction: row; */
+    background-size: cover;
+    background: linear-gradient(black, red);
+    border: 1px solid black;
+    border-style: inset;
+    border-radius: 45px;
+    text-align: center;
+    height: 250px;
+    color: white;
+    font-size: large;
+}

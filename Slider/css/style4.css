@@ -1,0 +1,54 @@
+.carousel{
+    width: 100%;
+    margin: 15px auto;
+    
+}
+
+
+.slick-slide{
+    margin: 10px 10px;
+}
+
+.slick-next:before, .slick-prev:before{
+
+}
+
+.itemClass{
+    position: sticky;
+    border-top: 5px;
+    border-color: red;
+    border-style: inset;
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
+    font-size: large;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.itemClass img{
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.itemClass h1{
+    height: 30px;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+.itemClass p{
+    height: 30px;
+    background-size: cover;
+    position: absolute;
+    top: 120px;
+    left: 10px;
+}

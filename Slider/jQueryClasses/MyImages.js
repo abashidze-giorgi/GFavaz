@@ -1,0 +1,3 @@
+$.fn.MyImages = function(data){
+
+}

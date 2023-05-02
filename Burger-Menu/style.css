@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(250, 192, 1), green);
+    padding: 20px;
+}
+
+.navBarLogo a{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.links{
+    display: flex;
+    list-style: none;
+
+}
+
+.links li{
+    margin-left: 30px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+}
+
+.burgerNav{
+    cursor: pointer;
+    display: none;
+}
+
+.burgerNav .line1, .burgerNav .line2, .burgerNav .line3{
+    width: 50px;
+    height: 7px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .links{
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 100px;
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transform: translateX(100%);
+        transform: transform 0.5s ease;
+    }
+
+    .links.active{
+        transform: translateX(0%);
+    }
+
+    .burgerNav{
+       display: block;
+    }
+}

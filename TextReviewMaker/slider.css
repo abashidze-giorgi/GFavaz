@@ -1,0 +1,93 @@
+/* carousel style */
+.carousel{
+    width: 100%;
+    margin: 100px auto;
+}
+html{
+    background: linear-gradient(to left, black, red);
+}
+.slick-slide{
+    margin: 10px 10px;
+}
+
+.slick-next:before, .slick-prev:before{
+
+}
+
+.heroeClass{
+    background-size: cover;
+    background: linear-gradient(black, red);
+    border: 1px solid black;
+    border-style: inset;
+    border-radius: 45px;
+    height: 250px;
+    color: white;
+    font-size: large;
+    position: sticky;
+    bottom: 10px;
+}
+
+/* manual slider style */
+
+.slider{
+    width: 50%!important;
+    margin: 15px auto;
+    position: fixed;
+    top: 600px;
+    left: 25%;
+}
+
+.slick-slide{
+    margin: 10px 10px;
+}
+
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+
+.image{
+    background-size: cover;
+    background: linear-gradient(rgb(80, 18, 250), rgb(0, 75, 16));
+    border: 1px solid black;
+    border-style: inset;
+    border-radius: 45px;
+    height: 250px;
+    color: white;
+    font-size: large;
+    position: sticky;
+    bottom: 10px;
+}
+
+
+.buttonsDIv {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  a {
+    width: 150px;
+    height: 50px;
+    margin: 0 5px;
+    margin: 40px;
+    padding: 10px;
+    color: white;
+  }

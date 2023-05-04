@@ -44,12 +44,12 @@ $(document).ready(function(){
 
     $(`.carousel`).slick({
                     infinite: true,
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     dots: false,
                     arrows: true,
                     autoplay: true,
-                    autoplaySpeed: 500,
+                    autoplaySpeed: 3000,
                     responsive: true,
                     centerMode: true,
                     centerPadding: 500,
@@ -60,33 +60,37 @@ $(document).ready(function(){
         
 });
 
-$(document).ready(function(){
-    var slides = [
-        {image: src="./images/image1.jpg"},
-        {image: src="./images/image2.jpg"},
-        {image: src="./images/image3.jpg"},
-        {image: src="./images/image4.jpg"},
-    ]
-    slides.forEach(slide=>{
-        const image = `
-        <div class = "image" style = "background-image: url(${slide.image}); background-size: cover; text-align: center;"></div>`;
-        $(`.slider`).append(image);
-    });
+document.addEventListener("DOMContentLoaded", function(){
+    const slides = document.querySelector(".slides");
+    const nextBtn = document.getElementById("#btnNext")
+    const prevBtn = document.getElementById("#btnPrev");
+    
 
+    var currentSlideIndex = 0;
+    const slideCount = slides.children.length;
 
-    $(`.slider`).slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: true,
-        autoplay: false,
-        autoplaySpeed: 500,
-        responsive: true,
-        centerMode: true,
-        centerPadding: 500,
-        swipeToSlide: 5,
-        fade: false,
-        cssEase: 'ease-in-out'                
+    function goToSlide(index){
+        if(index < 0){
+                currentSlideIndex - slideCount-1;
+        }else if(index >= slideCount){
+            currentSlideIndex = 0;
+        }else{
+            currentSlideIndex = index;
+        }
+
+        var transitionX = (currentSlideIndex * 100) + '%';
+        slides.style.transform = `translateX(-${transitionX})`;
+    }
+
+    nextBtn.addEventListener('click', ()=>{
+        currentSlideIndex += 1;
+        goToSlide(currentSlideIndex);
     });
+    prevBtn.addEventListener('click', ()=>{
+        currentSlideIndex -= 1;
+        goToSlide(currentSlideIndex);
+    })
+
+    goToSlide(0);
+
 });

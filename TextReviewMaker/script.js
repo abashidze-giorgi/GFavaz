@@ -22,6 +22,10 @@ footer.textContent = 'Copyright © 2023';
 footer.style.backgroundColor = 'green'; // Use the color name, hex code, or rgb value
 footer.style.padding = '20px';
 footer.style.textAlign = 'center';
+footer.style.position = 'fixed';
+footer.style.bottom = '0px';
+footer.style.width = '100%';
+
 
 // add the footer element to the end of the body
 document.body.appendChild(footer);

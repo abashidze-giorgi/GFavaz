@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Jhon Snow",
+        "role": "Guard",
+        "img": "./images/snow.jpg"
+    },
+    {
+        "name": "Cersey Lanister",
+        "role": "Queen regent",
+        "img": "./images/cersei.jpg"
+    },
+    {
+        "name": "Edd Stark",
+        "role": "Idiot",
+        "img": "./images/stark.jpg"
+    }
+]
